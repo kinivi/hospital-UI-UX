@@ -1,0 +1,329 @@
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f3f5f7;
+    font-family: 'Roboto', sans-serif;
+}
+
+.timetable {
+    display: grid;
+    grid-template-areas: ". week" "time content";
+    grid-template-columns: 120px;
+    grid-template-rows: 30px;
+    width: 100%;
+    height: 80vh;
+    background-color: white;
+}
+
+/*-------------------------------------*/
+/*---------------Colors----------------*/
+/*-------------------------------------*/
+
+.timetable i.fa-sun{
+    color: #ffc107;
+}
+
+.timetable i.fa-moon{
+    color: #000000;
+}
+
+div.session-1,
+div.session-2,
+div.session-3,
+div.session-4 {
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+div.session-1 p,
+div.session-2 p,
+div.session-3 p,
+div.session-4 p{
+    display: block;
+    margin: 0 5px;
+    font-size: 12px;
+    font-weight: bold;
+    color: white;
+}
+
+div.session-1 i,
+div.session-2 i,
+div.session-3 i,
+div.session-4 i{
+    display:block;
+    padding: 5px;
+    font-size: 20px;
+    text-align: center;
+    vertical-align: bottom;
+}
+
+
+div.session-1 {
+    height: 250%;
+    transform: translateY(20%);
+    background-color: #17a2b8;
+}
+
+div.session-2 {
+    height: 100%;
+    transform: translateY(50%);
+    background-color: #17a2b8;
+}
+div.session-3 {
+    height: 200%;
+    transform: translateY(25%);
+    background-color: #17a2b8;
+}
+
+div.session-4 {
+    height: 100%;
+    background-color: #17a2b8;
+}
+/*--------------------------------------------*/
+/*--------------------------------------------*/
+/*--------------------------------------------*/
+
+
+.timetable .weekend {
+    background: rgba(0,0,0,0.1);
+    color: #87a1ad;
+}
+.timetable .week-names {
+    grid-area: week;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    text-transform: uppercase;
+    font-size: 10px;
+}
+.timetable .week-names > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    box-shadow: inset 1px 0 0 rgba(0,0,0,0.1);
+}
+
+
+.timetable .time-interval {
+    grid-area: time;
+    display: grid;
+    grid-template-rows: repeat(12, 1fr);
+    font-size: 14px;
+}
+
+.timetable .time-interval > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    box-shadow: inset 0 1px 0 0 rgba(0,0,0,0.1);
+}
+
+
+.timetable .content {
+    grid-area: content;
+    display: grid;
+    grid-template-rows: repeat(12, 1fr);
+    grid-template-columns: repeat(7, 1fr);
+}
+.timetable .content > div {
+    box-shadow: inset 1px 0 0 rgba(0,0,0,0.1), inset 0 1px 0 0 rgba(0,0,0,0.1);
+}
+
+.table-actions {
+    width: 100%;
+    padding: 7px 25px;
+    display: flex;
+    background-color: white;
+    justify-content: space-between;
+    align-content: center;
+    text-align: center;
+    margin-top: 10px;
+}
+.table-actions button {
+    margin-right: 10px;
+}
+
+.table-actions i {
+    margin-right: 5px;
+}
+
+.table-actions .table-actions-title {
+    font-weight: bold;
+    text-align: center;
+}
+
+
+
+/*----------------------------------------------------------*/
+/*---------------------------Card---------------------------*/
+/*----------------------------------------------------------*/
+
+.profile-card {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    width: 93%;
+    padding: 5px 0;
+    font-size: 0.8rem;
+    margin: 10px auto 0;
+}
+
+.profile-card .container{
+    padding: 0;
+}
+
+.main-info{
+    text-align: center;
+    justify-content: space-between;
+    padding: 15px 40px;
+}
+
+.main-info img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 2px solid #4e555b;
+}
+
+.main-info .name-post-text {
+    padding-left: 10px;
+    text-align: left;
+}
+
+.main-info .name-post-text div:first-child {
+    font-size: 1rem;
+    font-weight: bold;
+}
+.main-info .name-post-text div:last-child {
+    font-size: 0.7rem;
+    color: #4e555b;
+}
+
+.additional-info {
+    padding: 15px;
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+    text-align: left;
+}
+
+.additional-info .info-type {
+    color: #4e555b;
+    font-weight: bold;
+    padding-right: 20px;
+    padding-left: 10px;
+    width: 20%;
+}
+
+.additional-info .profile-info{
+    max-width: 80%;
+}
+
+.profile-card .container div.additional-info:nth-child(2){
+    border-top: 1px solid rgba(0,0,0,0.2);
+}
+.profile-card .container div.additional-info:nth-child(5){
+    border-bottom: none;
+}
+
+
+
+.patient-info{
+    text-align: center;
+    justify-content: space-between;
+    padding: 5px 40px;
+}
+
+.patient-info img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid #4e555b;
+}
+
+.patient-info .name-post-text {
+    padding-left: 10px;
+    text-align: left;
+}
+
+.patient-info .name-post-text div:first-child {
+    font-size: 0.7rem;
+    font-weight: bold;
+}
+.patient-info .name-post-text div:last-child {
+    font-size: 0.6rem;
+    font-size: 0.6rem;
+    color: #4e555b;
+    max-height: 10%;
+}
+
+.patient-info .date{
+    color: #4e555b;
+    padding: 7px;
+    font-size: 10px;
+}
+
+.additional-info {
+    padding: 15px;
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+    text-align: left;
+}
+
+.additional-info .info-type {
+    color: #4e555b;
+    font-weight: bold;
+    padding-right: 20px;
+    padding-left: 10px;
+    width: 20%;
+}
+
+.patient-card {
+    margin-top: 5px;
+}
+
+.bottom-subinfo-title {
+    margin-top: 15px;
+    margin-bottom: 7px;
+    text-align: center;
+}
+
+.patient-notes i{
+    font-size: 20px;
+}
+
+.patient-notes .fa-exclamation-triangle {
+    color: red;
+}
+
+.patient-notes .fa-info-circle {
+    color: #ffc107;
+}
+
+.patient-notes  i{
+    padding: 5px;
+}
+
+.edit-button {
+    padding: 15px 30px;
+}
+
+span.additional-links {
+    display: inline-block;
+    padding-left: 7px;
+    padding-right: 25px;
+}
+
+a.navbar-link {
+    color: white;
+}
+
+a.navbar-link:hover{
+color: rgba(255, 255, 255, 0.8);
+}
+

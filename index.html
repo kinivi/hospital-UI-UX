@@ -1,0 +1,324 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+          integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css"
+          integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Doctor's table</title>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <a class="navbar-brand" href="#">Hospital</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Some Link</a>
+            </li>
+        </ul>
+        <div><a class="navbar-link" href="#"><i class="fas fa-question-circle"></i><span class="additional-links">Support</span></a></div>
+        <div><a class="navbar-link" href="#"><i class="fas fa-cog"></i><span class="additional-links">Settings</span></a></div>
+    </div>
+</nav>
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-lg-7 col-md-12">
+            <div class="container">
+                <div class="table-actions">
+                    <p class="table-actions-title text-center">Your timetable</p>
+                    <div class="row">
+                        <button class="btn btn-danger"><i class="far fa-trash-alt"></i>Delete</button>
+                        <button class="btn btn-outline-info"><i class="far fa-clock"></i>Add new time</button>
+                    </div>
+                </div>
+                <div class="timetable">
+                    <div class="week-names">
+                        <div>monday</div>
+                        <div>tuesday</div>
+                        <div>wednesday</div>
+                        <div>thursday</div>
+                        <div>friday</div>
+                        <div class="weekend">saturday</div>
+                        <div class="weekend">sunday</div>
+                    </div>
+
+                    <div class="time-interval">
+                        <div>06:00 - 08:00</div>
+                        <div>08:00 - 10:00</div>
+                        <div>10:00 - 12:00</div>
+                        <div>12:00 - 14:00</div>
+                        <div>14:00 - 16:00</div>
+                        <div>16:00 - 18:00</div>
+                        <div>18:00 - 20:00</div>
+                        <div>20:00 - 22:00</div>
+                        <div>12:00 - 24:00</div>
+                        <div>00:00 - 02:00</div>
+                        <div>02:00 - 04:00</div>
+                        <div>04:00 - 06:00</div>
+                    </div>
+                    <div class="content">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div class="weekend"></div>
+                        <div class="weekend"></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div>
+                            <div class="session-1"><i class="fas fa-sun"></i><p>09:00-14:00</p></div>
+                        </div>
+                        <div></div>
+                        <div class="weekend"></div>
+                        <div class="weekend"></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div class="weekend">
+                            <div class="session-2"><i class="fas fa-sun"></i><p>11:00-13:00</p></div>
+                        </div>
+                        <div class="weekend"></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div class="weekend"></div>
+                        <div class="weekend"></div>
+                        <div>
+                            <div class="session-2"><i class="fas fa-sun"></i><p>15:00-17:00</p></div>
+                        </div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div class="weekend"></div>
+                        <div class="weekend"></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div class="weekend"></div>
+                        <div class="weekend"></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div>
+                            <div class="session-1"><i class="fas fa-moon"></i><p>19:00 - 24:00</p></div>
+                        </div>
+                        <div class="weekend"></div>
+                        <div class="weekend"></div>
+                        <div></div>
+                        <div>
+                            <div class="session-3"><i class="fas fa-moon"></i><p>19:00 - 24:00</p></div>
+                        </div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div class="weekend"></div>
+                        <div class="weekend"></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div class="weekend"></div>
+                        <div class="weekend"></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div class="weekend"></div>
+                        <div class="weekend">
+                            <div class="session-4"><i class="fas fa-moon"></i><p>00:00 - 02:00</p></div>
+                        </div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div class="weekend"></div>
+                        <div class="weekend"></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div class="weekend"></div>
+                        <div class="weekend"></div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="col-lg-5 col-md-12">
+            <div class="row">
+                <div class="profile-card">
+                    <div class="container">
+                        <div class="main-info row">
+                            <div class="row">
+                                <img src="http://szzljy.com/images/doctor/doctor8.jpg" alt="Dou John">
+                                <div class="column name-post-text">
+                                    <div>Dr. Sam James</div>
+                                    <div>Surgeon</div>
+                                </div>
+                            </div>
+
+                            <button class="btn btn-outline-dark edit-button">Edit</button>
+
+                        </div>
+                        <div class="additional-info">
+                            <div class="row">
+                                <div class="info-type">Email:</div>
+                                <div class="profile-info">someemail@example.com</div>
+                            </div>
+                        </div>
+                        <div class="additional-info">
+                            <div class="row">
+                                <div class="info-type">Phone:</div>
+                                <div class="profile-info">098 777 33 33</div>
+                            </div>
+                        </div>
+                        <div class="additional-info">
+                            <div class="row">
+                                <div class="info-type">Status:</div>
+                                <div class="profile-info">Doctor of the second degree</div>
+                            </div>
+                        </div>
+                        <div class="additional-info">
+                            <div class="row">
+                                <div class="info-type">Address:</div>
+                                <div class="profile-info">1600 Atlantic Road Mountain View, CA 999944 United States
+                                    Doctors
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 col-md-12">
+                    <div class="bottom-subinfo-title">Recent patients</div>
+
+                    <div class="profile-card patient-card">
+                        <div class="container">
+                            <div class="patient-info row">
+                                <div class="row">
+                                    <img src="https://media1.popsugar-assets.com/files/thumbor/4pA9G0Iqd9NkAzTGprztye_AbRI/fit-in/1024x1024/filters:format_auto-!!-:strip_icc-!!-/2015/03/06/145/n/4852708/739b036ebaf0da9d_10986022_1536428393289696_1441506879_n/i/Hot-Men-Coffee-Instagram-Pictures.jpg" alt="Dou John">
+                                    <div class="column name-post-text">
+                                        <div>Harold Makkenzi</div>
+                                        <div>Problems with stomach</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="profile-card patient-card">
+                        <div class="container">
+                            <div class="patient-info row">
+                                <div class="row">
+                                    <img src="https://i07.fotocdn.net/s7/52/gallery_m/89/2234406963.jpg" alt="Dou John">
+                                    <div class="column name-post-text">
+                                        <div>Dianna Sun</div>
+                                        <div>Headache</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="profile-card patient-card">
+                        <div class="container">
+                            <div class="patient-info row">
+                                <div class="row">
+                                    <img src="http://3k-girls.com/wp-content/uploads/2018/04/hair-style-for-boy-2016-the-most-glorious-man-buns-on-instagram-with-the-most-unique-men-hairstyle-instagram.jpg" alt="Dou John">
+                                    <div class="column name-post-text">
+                                        <div>Andrew Lebovsiy</div>
+                                        <div>Tachycardia</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <div class="col-lg-6 col-md-12">
+                    <div class="bottom-subinfo-title">Patients notes</div>
+
+                    <div class="profile-card patient-card">
+                        <div class="container">
+                            <div class="patient-info patient-notes row">
+                                <div class="row">
+                                    <div><i class="fas fa-info-circle alert-type"></i></div>
+                                    <div class="column name-post-text">
+                                        <div>Dianna Sun</div>
+                                        <div>Problems with the stomach, tachycardia. Prescribed medication PD-200 twice a day
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="date">24.08.19</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="profile-card patient-card">
+                        <div class="container">
+                            <div class="patient-info patient-notes row">
+                                <div class="row">
+                                    <div><i class="fas fa-exclamation-triangle"></i></div>
+                                    <div class="column name-post-text">
+                                        <div>Andrew Lebovsiy</div>
+                                        <div>Into the reanimation</div>
+                                    </div>
+                                </div>
+
+                                <div class="date">24.08.19</div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+            integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+            crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
+            integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+            crossorigin="anonymous"></script>
+</body>
+</html>
